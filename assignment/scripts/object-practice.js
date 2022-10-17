@@ -13,7 +13,7 @@ const me = {
   firstName: 'Josh',
   lastName: 'Clemons',
   hasSiblings: true,
-  shoCount: 4,
+  shoeCount: 4,
   favThreeFoods: [ 'pizza', 'chicken wings', 'ribs' ]
 };
 console.log('A little about me:', me);
@@ -37,7 +37,7 @@ console.log( 'Should display full name:', fullName)
 for ( i=0; i<me.favThreeFoods.length; i++) {
   if ( i==0 || i===me.favThreeFoods.length-1 ) {
     console.log(me.favThreeFoods[i] );
-  } // logs first and last value in favThreeFoods array
+  } // console logs first and last value in favThreeFoods array
 }
 
 
@@ -47,6 +47,11 @@ for ( i=0; i<me.favThreeFoods.length; i++) {
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
+console.log( 'Current shoe count:', me.shoeCount);
+
+me.shoeCount += 1;
+
+console.log( 'New pair of shoes! Updated shoe count:', me.shoeCount );
 
 
 /* 5. Add a new property to an existing object.
@@ -55,3 +60,7 @@ for ( i=0; i<me.favThreeFoods.length; i++) {
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = 'blue';
+
+console.log( 'My favorite color is:', me.favoriteColor );
+// Neat!
